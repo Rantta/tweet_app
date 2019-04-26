@@ -1,0 +1,71 @@
+/* Profile Page -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+body{
+    box-sizing: border-box;
+}
+.profile{
+    margin-top: 30px;
+}
+.container-fluid .card .father{
+    height: 500px;
+}
+.container-fluid .card{
+    box-shadow: 6px 6px 5px 2px #DDD,
+                4px -6px 5px 2px #DDD;
+}
+.container-fluid .card .avatar img{
+    height: 230px;
+    position: relative;
+    top: 75px;
+    left: 10px;
+    width: 280px;
+}
+.container-fluid .card .info{
+    margin-top: 215px;
+}
+.container-fluid .card .info .infos{
+    margin-top: 20px;
+    border-left: 2px solid #eae5e5;
+    padding-left: 80px;
+    height: 246px;
+}
+.container-fluid .card .info .infos label{
+    color: #40abf4;
+    font-style: italic;
+}
+.container-fluid .card .info .infos h3 {
+    color: #946666;
+    font-family: cursive;
+}
+.container-fluid .card .info .infos h3 .fa-clock{
+    color: #a9bba8cc;
+}
+.container-fluid .card .info .infos h3 .fa-envelope{
+    color: #7c50e0cc;
+}
+.container-fluid .card .info .infos h3 .fa-star{
+    color: #0eff00cc;
+}
+.container-fluid .card .welcome{
+     position: absolute;
+    height: 211px;
+    background-image: url('../css/image/tweet.png');
+    line-height: 8;
+    font-size: 26px;
+    color: aliceblue;
+}  
+.container-fluid .card form{
+    position: absolute;
+    left: -506px;
+    bottom: 20px;
+}
+.container-fluid .card form h3{
+    color: #946666;
+    font-family: cursive;
+    padding-bottom: 10px;
+    top: -53px;
+    position: absolute;
+}
+.container-fluid .card form input{
+    display: block;
+    margin-bottom: 20px;
+}
