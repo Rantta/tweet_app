@@ -11,7 +11,7 @@
                     <img src="{{asset('storage/'. $user->image)}}" alt="avatar" class="rounded-circle img-thumbnail ">
                 </div>
         <div class="col-md-7 info">
-            <div class="infos">
+            <div class="infos user-info">
                     <label><i class="fas fa-asterisk"></i> User Name :</label>
                     <h3> <i class="fas fa-star"></i> {{ $user->name }}</h2>
                     <label><i class="fas fa-asterisk"></i> Email Address :</label>
@@ -21,22 +21,18 @@
                     @endphp
                     <label><i class="fas fa-asterisk"></i> Join Tweet At :</label>
                     <h3><i class="fas fa-clock"></i> {{  $create  }}</h3>
-                    @if(auth()->user()->isNot($user))
+                    <div class="sub">
+                         <h3>These are some information about our users if you like to follow them and see their tweet.</h3>
+                         @if(auth()->user()->isNot($user))
                     @if(auth()->user()->isFollowing($user))
                     <a href="{{ route('user.unfollow', $user) }}" class="btn btn-danger">No Follow</a>
                     @else
-                    <a href="{{ route('user.follow', $user) }}" class="btn btn-success">Follow</a>
+                    <a href="{{ route('user.follow', $user) }}" class="btn btn-block btn-success">Follow</a>
                     @endif
-                @endif
-           </div>
-          
-            <form id="avatar-form" action="{{url('/profile')}}" method="POST" enctype="multipart/form-data">
-                {{ csrf_field() }}
-                <h3>Change Profile Picture :</h3>
-                          <input type="file" name="image" class="" id="inputGroupFile03" form="avatar-form" aria-describedby="inputGroupFileAddon03">
-                          <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
-                 <button class="btn btn-block btn-primary">submit</button>
-            </form>
+                    @endif
+                    </div>
+                   
+         </div>
            
         </div>
     </div> 

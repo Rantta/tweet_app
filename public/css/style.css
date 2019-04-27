@@ -69,3 +69,24 @@ body{
     display: block;
     margin-bottom: 20px;
 }
+.user-info{
+    margin-top: 20px;
+    border-right: 2px solid #eae5e5;
+    padding-left: 80px;
+    height: 246px;
+    width: 551px;
+    border-left: none !important;
+    position: absolute;
+    right: 524px;
+}
+.sub{
+    position: absolute;
+    right: -468px;
+    width: 420px;
+    bottom: 39px;
+}
+.sub h3{
+    color: #946666;
+    font-family: cursive;
+    margin-bottom: 40px;
+}

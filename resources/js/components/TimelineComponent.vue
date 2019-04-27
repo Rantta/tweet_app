@@ -6,7 +6,7 @@
             <img class="mr-3" />
             <div class="media-body">
                 <div class="mt-3">
-                    <a href="/profile">{{ post.user.name }}</a>
+                    <a :href="post.user.profileLink">{{ post.user.name }}</a> {{ post.createdDate }}
                 </div>
                 <p>{{ post.body }}</p>
             </div>
@@ -24,6 +24,9 @@ export default {
         }
     },
     mounted() {
+          axios.get('/posts').then((resp => {
+            this.posts = resp.data;
+        }));
         Event.$on('added_tweet', (post) => {
             this.posts.unshift(post);
         });
