@@ -10,7 +10,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
+   
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -25,9 +27,8 @@
     <div id="">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/home') }}">
-                   Tweet
-                </a>
+            
+   
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,7 +52,17 @@
                                 </li>
                             @endif
                         @else
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <a class="navbar-brand home" href="{{ url('/home') }}">
+                            Home
+                         </a>
+                         <button class="btn btn-primary tweet-b">
+                             <a class="" href="{{ url('/tweet') }}">
+                             Tweet
+                              </a>
+                         </button>
                             <li class="nav-item dropdown">
+                                    <img src="{{asset('storage/'. Auth::user()->image)}}" alt="avatar" class="nav-pic rounded-circle ">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>

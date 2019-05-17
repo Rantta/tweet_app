@@ -5,10 +5,11 @@
    
     <div class="row justify-content-center">
           
-    
-            <timeline-component></timeline-component>
+            <form-component></form-component>
             
             
     </div>
+
+
 </div>
 @endsection

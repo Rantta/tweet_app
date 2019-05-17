@@ -1,6 +1,7 @@
 /* Profile Page -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
 body{
     box-sizing: border-box;
+    background-color:#e6ecf0 !important;
 }
 .profile{
     margin-top: 30px;
@@ -89,4 +90,44 @@ body{
     color: #946666;
     font-family: cursive;
     margin-bottom: 40px;
+}
+.nav-pic{
+    height: 40px !important;
+    position: absolute;
+    width: 36px;
+    left: -40px;
+    border: 2px solid #DDD;
+}
+.tweet-b{
+    position: absolute;
+    right: 277px;
+    height: 33px;
+    width: 84px;
+    top: 11px;
+    border-radius: 30px !important;
+    background-color: #40abf4 !important;
+}
+.home{
+    position: absolute;
+    left: 299px;
+    color: #40abf4 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #40abf4;
+    height: 47px;
+    width: 73px;
+    text-align: center;
+}
+.fa-twitter{
+    left: 658px;
+    top: 14px;
+    position: absolute;
+    color: #40abf4;
+    cursor: pointer;
+}
+.container .collapse ul .tweet-b a{
+    color: white;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 1;
 }
