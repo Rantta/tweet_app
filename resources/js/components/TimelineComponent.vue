@@ -68,7 +68,7 @@
     .posts input{
     position: absolute;
     top: -81px;
-    right: 44px;
+    right: 100px;
     border-radius: 30px;
     outline-style: none;
     border: 1px solid #DDD;
@@ -76,6 +76,38 @@
     width: 190px;
     padding-left: 7px;
     background-color: aliceblue;
+    }
+     @media (max-width: 1200px) and (min-width: 992px) {
+     .posts input{
+         right: 200px;
+     }
+     .media .tw .para hr{
+         width: 558px;
+     }
+    }
+      @media (max-width: 992px) and (min-width: 768px) {
+        .media .tw .para hr{
+         width: 420px;
+     }
+      .posts input{
+         right: 200px;
+     }
+    }
+     @media (max-width: 768px) and  (min-width: 576px) {
+           .media .tw .para hr{
+         width: 540px;
+     }
+     .posts input{
+          right: 276px;
+     }
+    }
+    @media (max-width: 576px) { 
+           .media .tw .para hr{
+         width: 492px;
+     }
+     .posts input{
+         right: 208px;
+     }
     }
 </style>
 <script>
@@ -97,6 +129,7 @@ export default {
             this.posts.unshift(post);
         });
     },
+   
     computed:{
         filtredTweet:function(){
             return this.posts.filter((post) => {

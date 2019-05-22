@@ -24,13 +24,12 @@ textarea{
     padding-top: 10px;
 }
 button{
-    position: relative;
-    left: 651px;
     border-radius: 40px;
     width: 77px;
     height: 31px;
     line-height: 1;
 }
+
 </style>
 
 <script>

@@ -55,9 +55,10 @@ body{
     color: aliceblue;
 }  
 .container-fluid .card form{
-    position: absolute;
-    left: -506px;
-    bottom: 20px;
+    position: relative;
+    bottom: -159px;
+    left: 10px;
+    width: 277px;
 }
 .container-fluid .card form h3{
     color: #946666;
@@ -70,21 +71,9 @@ body{
     display: block;
     margin-bottom: 20px;
 }
-.user-info{
-    margin-top: 20px;
-    border-right: 2px solid #eae5e5;
-    padding-left: 80px;
-    height: 246px;
-    width: 551px;
-    border-left: none !important;
-    position: absolute;
-    right: 524px;
-}
 .sub{
-    position: absolute;
-    right: -468px;
-    width: 420px;
-    bottom: 39px;
+    margin-top: 93px;
+    margin-left: 20px;
 }
 .sub h3{
     color: #946666;
@@ -100,12 +89,16 @@ body{
 }
 .tweet-b{
     position: absolute;
-    right: 277px;
+    right: 252px;
     height: 33px;
     width: 84px;
     top: 11px;
     border-radius: 30px !important;
     background-color: #40abf4 !important;
+}
+.tweet-l{
+    color: white !important;
+    text-decoration: none !important;
 }
 .home{
     position: absolute;
@@ -117,7 +110,7 @@ body{
     width: 73px;
     text-align: center;
 }
-.fa-twitter{
+.fa-tw{
     left: 658px;
     top: 14px;
     position: absolute;
@@ -131,3 +124,203 @@ body{
     font-size: 17px;
     line-height: 1;
 }
+/*scrollbar */
+body::-webkit-scrollbar-track
+{
+	box-shadow: 0 0 0 #f5f7f7;
+	border-radius: 10px;
+	background-color: #f5f7f7;;
+}
+
+body::-webkit-scrollbar
+{
+    width: 8px;
+    height: 30px;
+	background-color: #f5f7f7;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color:#40abf4;
+}
+/*--------------------------ANIMATION----------------*/
+.anime{
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color: #40abf4;
+    height: 100%;
+    width: 100%;
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 145px;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    font-size: 117px;
+    left: 0;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+    color: white;
+  }
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+     
+    } 50% { 
+      transform: scale(1.0);
+    }
+  }
+  /*---------------------Medea---------------------*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
+    .fa-tw{
+        display: none !important;
+    }
+    .home{
+        left: 6px;
+    }
+    .tweet-b{
+        right: 117px;
+    }
+    .father .welcome span{
+        display: none !important;
+    }
+    .container-fluid .card .avatar img{
+        left: 139px;
+    }
+    .avatar-form{
+        width: 216px !important;
+       }
+     .container-fluid .card .info{
+        margin-top: 274px;
+       }
+       .container-fluid .card .info .infos{
+        padding-left: 7px;
+       height: 185px;
+        margin-top: 33px;
+       }
+    .infos h3{
+        font-size: 17px;
+    }
+    .container-fluid .card form h3{
+        top: -71px;
+        font-size: 19px;
+       margin-top: 22px;
+       padding-bottom: 0;
+    }
+    .avatar h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .dropp{
+        width: 40px;
+    }
+    .logs{
+        position: absolute !important;
+    }
+    }
+    
+    /* Medium devices (tablets, 768px and up)*/
+    @media (max-width: 768px) and  (min-width: 576px) {
+        .fa-tw{
+            display: none !important;
+        }
+        .home{
+            left: 12px;
+        }
+        .tweet-b{
+            right: 194px;
+        }
+      .drop{
+        right: -18px;
+      }
+      .avatar-form{
+       width: 216px !important;
+      }
+      .avatar-form h3{
+          display: none !important;
+      }
+      .infos{
+          padding-left: 6px !important;
+      }
+      .infos h3{
+        font-size: 20px;
+    }
+    .father .welcome span{
+        position: relative;
+        top: -55px;
+    }
+    .avatar h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .container-fluid .card .info .user-info{
+        padding-left: 38px !important;
+    }
+  .dropp{
+      width: 40px;
+  }
+  .logs{
+      position: absolute !important;
+  }
+    }
+    
+    /* Large devices (desktops, 992px and up)*/
+    @media (max-width: 992px) and (min-width: 768px) {
+    .fa-tw{
+        display: none !important;
+    }
+    .home{
+        left: 96px;
+    }
+    .tweet-b{
+        right: 270px;
+    }
+    .father .welcome span{
+        position: relative;
+        top: -55px;
+    }
+    .container-fluid .card .info .user-info{
+    padding-left: 38px;
+    margin-left: 23px;
+    }
+    .avatar h3{
+        font-size: 20px;
+    }
+
+    }
+    @media (max-width: 1200px) and (min-width: 992px) {
+     .fa-tw{
+        left: 687px;
+     }
+
+    }
+    @media (max-width: 1300px) and (min-width: 1200px) {
+        .fa-tw{
+           left: 576px;
+        }
+       }
+       @media (max-width: 1075px) and (min-width: 992px) {
+        .tweet-b{
+            right: 190px;
+        }
+        .fa-tw{
+            left: 645px;
+         }
+       }

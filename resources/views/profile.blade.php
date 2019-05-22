@@ -5,12 +5,19 @@
  <div class="card">
     <div class="row father justify-content-center">
         <div class="col-md-12 text-center welcome">
-            Welcome To Your Tweet Profile !
+           <span>Welcome To Your Tweet Profile !</span> 
         </div>
-                <div class="col-md-5 avatar">
+                <div class="col-md-5 col-sm-5 col-6 avatar">
                     <img src="{{asset('storage/'. $user->image)}}" alt="avatar" class="rounded-circle img-thumbnail ">
-                </div>
-        <div class="col-md-7 info">
+                    <form id="avatar-form" class="avatar-form" action="{{url('/profile')}}" method="POST" enctype="multipart/form-data">
+                        {{ csrf_field() }}
+                        <h3>Change Profile Picture :</h3>
+                                  <input type="file" name="image" class="" id="inputGroupFile03" form="avatar-form" aria-describedby="inputGroupFileAddon03">
+                                  <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                         <button class="btn btn-block btn-primary">submit</button>
+                    </form>
+               </div>
+        <div class="col-md-7 col-sm-7 col-6 info">
             <div class="infos">
                     <label><i class="fas fa-asterisk"></i> User Name :</label>
                     <h3> <i class="fas fa-star"></i> {{ $user->name }}</h2>
@@ -29,14 +36,6 @@
                     @endif
                 @endif
            </div>
-          
-            <form id="avatar-form" action="{{url('/profile')}}" method="POST" enctype="multipart/form-data">
-                {{ csrf_field() }}
-                <h3>Change Profile Picture :</h3>
-                          <input type="file" name="image" class="" id="inputGroupFile03" form="avatar-form" aria-describedby="inputGroupFileAddon03">
-                          <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
-                 <button class="btn btn-block btn-primary">submit</button>
-            </form>
            
         </div>
     </div> 

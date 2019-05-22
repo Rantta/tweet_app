@@ -1831,7 +1831,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1874,6 +1873,38 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _event_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../event.js */ "./resources/js/event.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6443,7 +6474,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\ntextarea[data-v-b1dd1884]{\r\n    border: 1px solid #bda9a9;\r\n    padding-left: 14px;\r\n    padding-top: 10px;\n}\nbutton[data-v-b1dd1884]{\r\n    position: relative;\r\n    left: 651px;\r\n    border-radius: 40px;\r\n    width: 77px;\r\n    height: 31px;\r\n    line-height: 1;\n}\r\n", ""]);
+exports.push([module.i, "\ntextarea[data-v-b1dd1884]{\r\n    border: 1px solid #bda9a9;\r\n    padding-left: 14px;\r\n    padding-top: 10px;\n}\nbutton[data-v-b1dd1884]{\r\n    border-radius: 40px;\r\n    width: 77px;\r\n    height: 31px;\r\n    line-height: 1;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -6462,7 +6493,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.posts[data-v-d82b9e3e]{\n      background-color: white;\n      margin-top: 13px;\n      margin-bottom: -25px;\n     padding-bottom: 2px;\n}\n.media .tw[data-v-d82b9e3e]{\n     display: flex;\n     margin-bottom: 21px;\n      margin-top: 13px;\n}\n.media .para[data-v-d82b9e3e]{\n   margin-left: 25px;\n   margin-bottom: -6px;\n}\n.media .tweet[data-v-d82b9e3e]{\n    margin-left: 10px;\n}\n.media .tweet img[data-v-d82b9e3e]{\n    height: 65px;\n    width: 65px;\n}\n.media .tw .para a[data-v-d82b9e3e]{\n     text-decoration: none;\n     color: black;\n     font-size: 16px;\n     font-weight: bold;\n     font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\n}\n.media .tw .para p[data-v-d82b9e3e]{\n     font-size: 14px;\n     font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\n}\n.media .tw .para hr[data-v-d82b9e3e]{\n     position: absolute;\n     left: 0;\n     width: 665px;\n}\n.media .tw .para span[data-v-d82b9e3e]{\n        font-size: 12px;\n         margin-left: 5px;\n         color: gray;\n         font-weight: bold;\n}\n.posts input[data-v-d82b9e3e]{\n position: absolute;\n top: -81px;\n right: 44px;\n border-radius: 30px;\n outline-style: none;\n border: 1px solid #DDD;\n height: 35px;\n width: 190px;\n padding-left: 7px;\n background-color: aliceblue;\n}\n", ""]);
+exports.push([module.i, "\n.posts[data-v-d82b9e3e]{\n      background-color: white;\n      margin-top: 13px;\n      margin-bottom: -25px;\n     padding-bottom: 2px;\n}\n.media .tw[data-v-d82b9e3e]{\n     display: flex;\n     margin-bottom: 21px;\n      margin-top: 13px;\n}\n.media .para[data-v-d82b9e3e]{\n   margin-left: 25px;\n   margin-bottom: -6px;\n}\n.media .tweet[data-v-d82b9e3e]{\n    margin-left: 10px;\n}\n.media .tweet img[data-v-d82b9e3e]{\n    height: 65px;\n    width: 65px;\n}\n.media .tw .para a[data-v-d82b9e3e]{\n     text-decoration: none;\n     color: black;\n     font-size: 16px;\n     font-weight: bold;\n     font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\n}\n.media .tw .para p[data-v-d82b9e3e]{\n     font-size: 14px;\n     font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\n}\n.media .tw .para hr[data-v-d82b9e3e]{\n     position: absolute;\n     left: 0;\n     width: 665px;\n}\n.media .tw .para span[data-v-d82b9e3e]{\n        font-size: 12px;\n         margin-left: 5px;\n         color: gray;\n         font-weight: bold;\n}\n.posts input[data-v-d82b9e3e]{\n position: absolute;\n top: -81px;\n right: 100px;\n border-radius: 30px;\n outline-style: none;\n border: 1px solid #DDD;\n height: 35px;\n width: 190px;\n padding-left: 7px;\n background-color: aliceblue;\n}\n@media (max-width: 1200px) and (min-width: 992px) {\n.posts input[data-v-d82b9e3e]{\n      right: 200px;\n}\n.media .tw .para hr[data-v-d82b9e3e]{\n      width: 558px;\n}\n}\n@media (max-width: 992px) and (min-width: 768px) {\n.media .tw .para hr[data-v-d82b9e3e]{\n      width: 420px;\n}\n.posts input[data-v-d82b9e3e]{\n      right: 200px;\n}\n}\n@media (max-width: 768px) and  (min-width: 576px) {\n.media .tw .para hr[data-v-d82b9e3e]{\n      width: 540px;\n}\n.posts input[data-v-d82b9e3e]{\n       right: 276px;\n}\n}\n@media (max-width: 576px) {\n.media .tw .para hr[data-v-d82b9e3e]{\n      width: 492px;\n}\n.posts input[data-v-d82b9e3e]{\n      right: 208px;\n}\n}\n", ""]);
 
 // exports
 
